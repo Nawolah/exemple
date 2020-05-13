@@ -1,0 +1,163 @@
+{ 
+   "name" :"nouveau",
+   "title": " Structure of trade to have access to the resources needed for a decent standard of living ",
+   "description" :"World Bank 2007, based on data from UNCTAD; aggregates calculated for HDRO by the World Bank.",
+    "fields" :  [
+
+
+        { 
+
+            "name": "HDI_rank",
+            "title":"HDI rank",
+            "type":"integer",
+            "mininum": 1  ,
+            "maximun":   177 ,
+            "description":"HDI rank of the countries determined on the basis of GEM values",
+            "constraints":{
+			     "unique": true
+}
+            
+        },
+
+        { 
+
+            "name": "Human_Dvt _Level",
+            "title":"Human Development Level(HDL)",
+            "type":"array",
+            "description":"Human Development Level of all the countries from those who have the highest human devolpment level to those who have  the lowest human development and it is determined on the basis of GEM values",
+            "constraints":{  "enum":[ 
+                
+                
+                "High","Medium","Low"
+
+
+            ]
+
+
+
+
+
+
+
+            }
+
+        },
+
+        { 
+
+            "name": "Countries",
+            "title":"Countries",
+            "type":"string",
+            "description":"Name  of the countries",
+            "maxLength":4,
+            "constraints":{
+                "required":true
+}
+
+
+        },
+
+        { 
+
+            "name": "Imports_1990",
+            "title":"Imports_of_goods_and_services ",
+            "type":"integer",
+            "mininum":1,
+            
+        },
+
+        { 
+
+            "name": "Imports_2005",
+            "title":"Imports_of_goods_and_services",
+            "type":"integer",
+            "minimun":1,
+            
+        },
+        { 
+
+            "name": "Exports_1990",
+            "title":"Exports_of_goods_and_services",
+            "type":"integer",
+            "minimun":1,
+        },
+
+        { 
+
+            "name": "Exports_2005",
+            "title":"Exports_of_goods_and_services",
+            "type":"integer",
+            "minimun":1,
+        },
+
+        { 
+
+            "name": "Primary_1990",
+            "title":"Primary_exports",
+            "type":"integer",
+            "minimun":1,
+
+		},
+        
+		{ 
+
+            "name": "Primary_2005",
+            "title":"Primary_exports",
+            "type":"integer",
+            "minimun":1,
+        },
+		
+		{ 
+
+            "name": "Manufactured_1990",
+            "title":"Manufactured exports",
+            "type":"integer",
+            "minimun":1,
+        },
+		
+		{ 
+
+            "name": "Manufactured_2005",
+            "title":"Manufactured exports",
+            "type":"integer",
+            "minimun":1,
+        },
+		
+		{ 
+
+            "name": "High_tech_1990",
+            "title":"High_technology_exports",
+            "type":"Number",
+            "minimun":0,
+        },
+ 
+        
+        {
+            "name": "High_tech_2005",
+            "title":"High_technology_exports",
+            "type":"Number",
+            "minimun":0,
+        },
+	
+        {
+            "name": "Terms_of_trade_",
+            "title":"Terms_of_trade_ (2000=100)b_2004-05c",
+            "type":"integer",
+            "minimun":1,
+        }
+
+
+
+    ],
+
+    "missingValues":[".."]
+
+
+
+
+
+
+
+
+
+}
